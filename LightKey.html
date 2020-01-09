@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Application.css"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>LightKey</title>
+</head>
+<body BACKGROUND="Image/back.jpg">
+<div class="sidenav">
+    <a href="Index.html">Index</a>
+    <a href="Application.html">Application</a>
+    <a href="About.html">About</a>
+    <a class="active" href="LightKey.html">Light Key</a>
+</div>
+    <div class="containerLIGHTKEY">
+        <h1>How to:</h1>
+        If you want to test the Game and see how this affect the lights,is simple.Their are 6 colours on the screen.
+        Clicking one will turn the light ON.Click it again to turn it OFF.Each of the colour represents one of the HUE lights on the wall.
+        If you want to turn ON all the lights in the same time press Turn ON button and if you want all the lights OFF in the same time press Turn OFF.
+    </div>
+<table id="LightGrid">
+    <tr>
+        <td class="field"  bgcolor="red" id="1"></td>
+        <td class="field" bgcolor="blue" id="4"></td>
+    </tr>
+    <tr>
+        <td class="field"  bgcolor="yellow" id="2"></td>
+        <td class="field" bgcolor="green" id="5"></td>
+    </tr>
+    <tr>
+        <td class="field"  bgcolor="#a52a2a" id="3"></td>
+        <td class="field" bgcolor="purple" id="6"></td>
+    </tr>
+</table>
+<div class="bar" id="info">
+    Press a colour to turn the light on
+</div>
+<div class="buttons">
+    <button id="start" onclick="start()">Turn ALL the lights ON</button>
+    <button id="reset" onclick="reset()">Turn ALL the lights OFF</button>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="js/LightKey.js"></script>
+</body>
+</html>

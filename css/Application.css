@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+body,html {
+    margin: 0;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+table{
+    width: 20%;
+    position: relative;
+    border:5px outset red;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    padding: 0px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+}
+td{
+    width: 33.333%;
+    height: 100px;
+    border: 6px solid #222;
+
+}
+td:after{
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+
+
+.field:hover {
+    transform: rotate(15deg) scale(1.1)
+}
+.field:active {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.field.active {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+
+.bar {
+    margin: 25px auto;
+    width: 400px;
+    font-weight: bold;
+    background: rgb(236, 240, 241);
+    border-radius: 2px;
+    color: rgb(52, 73, 94);
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    transition: 0.3s;
+
+}
+
+
+button {
+    min-width: 120px;
+    font-weight: bold;
+    background: rgb(236, 240, 241);
+    border-radius: 2px;
+    color: rgb(52, 73, 94);
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    transition: 0.3s;
+
+}
+
+button:active, button:disabled {
+    background: rgb(189, 195, 199);
+}
+.buttons {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sidenav a.active {
+    background-color: purple;
+    color: white;
+
+}
+.containerLIGHTKEY{
+    border: 15px outset purple;
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 40px;
+    margin-right: 100px;
+    background-color: lightgrey;
+    width: 450px;
+    height:405px ;
+    padding: 20px;
+}
